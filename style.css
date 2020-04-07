@@ -1,0 +1,9 @@
+body{
+    color: blue;
+}
+#im_an_id{
+    color: white;
+}
+.im_a_class{
+    color: grey;
+}
