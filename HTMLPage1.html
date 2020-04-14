@@ -3,9 +3,169 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>CS290-Class-Laura Elder</title>
+    <title>CS290-Class-Laura Elder: Assignment #2</title>
 </head>
+
 <body>
-    <p>Let's start making web pages<\br> That do what we want them to.</p>
+    <div>
+        <div>
+            <table>
+                <tr class="head">
+                    <td class="first"></td>
+                    <td>Color</td>
+                    <td>Age</td>
+                    <td>Weight</td>
+                    <td>Height</td>
+                    <td>Pet</td>
+                </tr>
+                <tr>
+                    <td class="first">Adam</td>
+                    <td>Blue</td>
+                    <td>33</td>
+                    <td>123</td>
+                    <td>5'8"</td>
+                    <td>Dog</td>
+                </tr>
+                <tr>
+                    <td class="first">Sam</td>
+                    <td>Black</td>
+                    <td>55</td>
+                    <td>139</td>
+                    <td>5'1"</td>
+                    <td>Hob-Gobblin</td>
+                </tr>
+                <tr>
+                    <td class="first">Tank</td>
+                    <td>Green</td>
+                    <td>330</td>
+                    <td>15000</td>
+                    <td>50'10"</td>
+                    <td>Mist</td>
+                </tr>
+                <tr>
+                    <td class="first">James</td>
+                    <td>Clear</td>
+                    <td>41</td>
+                    <td>88</td>
+                    <td>80'8"</td>
+                    <td>Cat</td>
+                </tr>
+                <tr>
+                    <td class="first">Jake</td>
+                    <td>Pink</td>
+                    <td>15</td>
+                    <td>456</td>
+                    <td>8'8"</td>
+                    <td>Linx</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Footer 1</td>
+                    <td colspan="4">Footer 2</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <ul>
+                <li>Best language</li>
+                <li>Python</li>
+                <li>Wackylist Language</li>
+                <li>Haskell</li>
+                <li>SEGFAUL Tiest language</li>
+                <li>C</li>
+            </ul>
+        </div>
+
+        <div class="outer-content">
+            <div class="inner-content">Here is some content.</div>
+        </div>
+
+        <div>
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+                <fieldset>
+                    <legend>Some POST Data</legend>
+                    <label>
+                        Text here:
+                        <input type="text" name="text_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                    <label>
+                        Number here:
+                        <input type="number" name="numerical_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                    <label>
+                        Password here:
+                        <input type="password" name="password-input" size="30" maxlength="20" />
+                    </label>
+                    <br />
+                </fieldset>
+
+                <fieldset>
+                    <p>
+                        Select between:
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Snickers" />Snickers
+                        </label>
+                        <br />
+
+                        <label>
+                            <input type="radio" name="candy" value="Skittles" />Skittles
+                        </label>
+                        <br />
+
+                        <label>
+                            <input type="radio" name="candy" value="Mentos" />Mentos
+                        </label>
+                        <br />
+                    </p>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+            </form>
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+                <fieldset>
+                    <legend>Some GET Data</legend>
+                    <label>
+                        Text here:
+                        <input type="text" name="text_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+                    <label>
+                        Number here:
+                        <input type="number" name="numerical_input" size="30" maxlength="100" />
+                    </label>
+                    <br />
+
+                    <label>
+                        Password here:
+                        <input type="password" name="password-input" size="30" maxlength="20" />
+                    </label>
+                    <br />
+                </fieldset>
+
+                <fieldset>
+                    <p>
+                        Select between:
+                        <br />
+                        <label>
+                            <input type="radio" name="candy" value="Snickers" />Snickers
+                        </label>
+                        <br />
+
+                        <label>
+                            <input type="radio" name="candy" value="Skittles" />Skittles
+                        </label>
+                        <br />
+
+                        <label>
+                            <input type="radio" name="candy" value="Mentos" />Mentos
+                        </label>
+                        <br />
+                    </p>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
