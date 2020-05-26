@@ -7,12 +7,12 @@ function showPicture(n) {
     var slide = document.getElementsByClassName("mySlides");
     var sub = document.getElementById("mySlides_sub").children;
     if (n > slide.length) {
-        pictureIndex = 1
+        slideIndex = 1
     }
     else if (n < 1) {
-        pictureIndex = slide.length;
+        slideIndex = slide.length;
     } else {
-        pictureIndex = n;
+        slideIndex = n;
     }
 
     for (i = 0; i < slide.length; i++) {
@@ -21,28 +21,28 @@ function showPicture(n) {
     for (i = 0; i < sub.length; i++) {
         sub[i].className = "sub";
     }
-    slide[pictureIndex - 1].style.display = "block";
-    sub[pictureIndex - 1].className = "subOn";
+    slide[slideIndex - 1].style.display = "block";
+    sub[slideIndex - 1].className = "subOn";
 }
 
 
 // clock
 function pictureTimer() {
-    pictureIndex += 1;
-    showPicture(pictureIndex);
+    slideIndex += 1;
+    showPicture(slideIndex);
     setTimeout(pictureTimer, 3000);
 }
 
 // prev button
 function previousPicture() {
-    pictureIndex -= 1;
-    showPicture(pictureIndex);
+    slideIndex -= 1;
+    showPicture(slideIndex);
 }
 
 //next button
 function nextPicture() {
-    pictureIndex += 1;
-    showPicture(pictureIndex);
+    slideIndex += 1;
+    showPicture(slideIndex);
 }
 
 // Add listener to previous picture button
@@ -54,8 +54,8 @@ document.getElementsByClassName("Next")[0].addEventListener("click",
     nextPicture)
 
 // Call first picture
-var pictureIndex = 0;
-showPicture(pictureIndex);
+var slideIndex = 0;
+showPicture(slideIndex);
 
 //call to the clock to keep things moving at the end
 pictureTimer();
