@@ -1,0 +1,93 @@
+<! DOCTYPE html>
+<!-- Carosel learned from w3 schools -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <div>
+        <img id="TopImg" class="mid" src="./Img-file/intro-pic.jpg" alt="Alphabet">
+    </div>
+
+    <div class="NavigationBar">
+        <a class="CurrentPage" href="./home.html">Home</a>
+        <a href="./second.html">Alphabetical Atributes</a>
+        <a href="./third.html">Atributes Test</a>
+        <a href="./fourth.html">Atribute Resources</a>
+    </div>
+    <table>
+        <tr>
+            <th></th>
+            <th>
+                <a class="Prev">Back</a>
+            </th>
+            <th>
+                <div>
+                    <ul id="mySlides_sub" class="mySlides_sub">
+                        <li class="sub" onclick="showPicture(1)"></li>
+                        <li class="sub" onclick="showPicture(2)"></li>
+                        <li class="sub" onclick="showPicture(3)"></li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <a class="Next">Next</a>
+            </th>
+        </tr>
+        <tr>
+            <th id="sidePar">
+                <p>
+                    We are all framilure with the letters of the English Language's Alphabet. From an
+                    early age we learn our 123s and our ABCs. Yet, it isn't until much later in life,
+                    when we have come into our own. That we can begin to apreciate the impact letters have on our lives.
+                </p>
+            </th>
+            <th colspan=3>
+
+
+                <div class="slideshow-container">
+
+                    <!-- The images and caption text. -->
+                    <div class="mySlides">
+                        <img class="All" src="./Img-file/i-b-m-pic.jpg" alt="Graphical representation of I, B, and M">
+                        <div class="mySlidesText">by Laura Elder</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="All" src="./Img-file/h-pic.jpg" alt="Graphical representation of H">
+                        <div class="mySlidesText">by Laura Elder</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="All" src="./Img-file/p-pic.jpg" alt="Graphical representation of P">
+                        <div class="mySlidesText">by Laura Elder</div>
+                    </div>
+
+                </div>
+            </th>
+        </tr>
+    </table>
+    <div class="mid_head">
+        <h1 class="mid"> Alphabetical Atributes- An Introduction</h1>
+    </div>
+    <div>
+        <p>
+            Through the most carless of observations and via the most un-scientific aproach possible; we have established a letter
+            personality matrix. This letter personality matrix can guide you in lifes smalest choices.<br /><br />
+            <u>Questions such as:</u>
+            <ol>
+                <li>What to name my child?</li>
+                <li>Who should I pick as a life partner?</li>
+                <li>Where on the Planet should I live?</li>
+            </ol>
+            <br />
+            Move forward in your Alphabet Association jouney and go to the <strong>Alphabet Associate</strong> page to learn more about the different
+            letter groups. The <strong>Atributes Test</strong> page will ask a series of questions to determin your goup. Go to the <strong>Atributes Resources</strong> page to download a pamphlet to better explain to your friends and family.
+        </p>
+    </div>
+    <!--> creat link to the script file</!-->
+    <script src="script.js"></script>
+</body>
+</html>

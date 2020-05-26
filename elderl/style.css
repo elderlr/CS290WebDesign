@@ -1,0 +1,237 @@
+/* I used the following to help with the below code */
+/*https://www.w3schools.com/css/css3_box-sizing.asp*/
+/*  https://www.w3schools.com/howto/howto_js_topnav.asp */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18pt;
+}
+
+/*Home page*/
+
+.mid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid_head {
+    text-align: center;
+    color: lightblue;
+}
+
+#TopImg {
+    height: 150px;
+    background-color: grey;
+}
+
+.NavigationBar {
+    margin-top: 10px;
+    position: sticky;
+    overflow: hidden;
+    top: 0px;
+    z-index: 100;
+}
+
+    .NavigationBar a {
+        color: black;
+        text-align: center;
+        width: 25%;
+        text-decoration: none;
+        font-size: 20px;
+        float: left;
+        padding: 20px 16px;
+        box-sizing: border-box;
+        background-color: lightblue;
+    }
+
+        .NavigationBar a:hover {
+            background-color: grey;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .NavigationBar a.CurrentPage {
+            color: grey;
+            pointer-events: none;
+            font-weight: bold;
+        }
+
+#sidePar {
+    width: 30%;
+    max-width: 30%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight: normal;
+}
+
+.slideshow-container {
+    width: 90%;
+    min-width: 90%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mySlides {
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.All {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.Prev {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    left: 50;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+    .Prev:hover {
+        background-color: grey;
+        color: white;
+    }
+
+.Next {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+    .Next:hover {
+        background-color: grey;
+        color: white;
+    }
+
+.mySlidesText {
+    color: white;
+    background-color: grey;
+    font-size: 12px;
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.sub {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 5%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+    border: solid 3px;
+    border-color: lightblue;
+    opacity: 0.5;
+}
+
+    .sub:hover {
+        border-color: grey;
+        opacity: 1;
+    }
+
+.subOn {
+    background-color: grey;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 5%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+    opacity: 1;
+}
+/* Page two*/
+
+.noDot {
+    list-style-type: none;
+}
+
+.sbox {
+    background-color: #e9f1fc;
+    border: solid;
+    border-color: #2277e0;
+    height: 100px;
+    overflow: scroll;
+    width: 85%;
+    margin: auto;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 30pt;
+}
+
+/*Page Three*/
+
+
+#greyback {
+    background-color: lightgrey;
+}
+
+label:hover {
+    color: white;
+}
+
+#formButton {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18pt;
+    border: 2px solid;
+    border-color: black;
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px;
+}
+
+/*Page Four*/
+
+#DownButton {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18pt;
+    border: 2px solid;
+    border-color: black;
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px;
+}
